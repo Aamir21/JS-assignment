@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <h2>
+            Assignment1_on day2_LetsUpgrade_JS
+        </h2>
+
+    </head>
+
+    <body>
+
+        <h4 id="sample"></h4>
+        <h4 id="sample2"></h4>
+        <script type="text/javascript">
+
+            var d = new Date();
+            var w = d.getDay();
+            var t = d.getTime();
+            
+
+            var weeks = new Array(7);
+
+            weeks[0] = "Sunday";
+            weeks[1] = "Monday";
+            weeks[2] = "Tuesday";
+            weeks[3] = "Wednesday";
+            weeks[4] = "Thursday";
+            weeks[5] = "Friday";
+            weeks[6] = "Saturday";
+
+
+            document.getElementById('sample').innerHTML="Today is : " + weeks[w] + ".";
+            document.getElementById('sample2').innerHTML="Current Time is : " + d.toLocaleTimeString();
+
+
+
+
+            
+        </script>
+
+    </body>
+
+</html>
