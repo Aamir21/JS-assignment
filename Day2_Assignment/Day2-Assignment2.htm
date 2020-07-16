@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Day2_Assignment2</h1>
+
+    <h2> Methods related to Array! </h2>
+    <h5>There are several methods used for array and variable operations like
+        <ol>
+            <li>concat() :      This method combine two or more array into one after another.</li>
+            <li>copyWithin():   This method copies array elements to another position in the array, overwriting the existing values.
+
+                This method will never add more items to the array.</li>
+            <li>push() : This method adds new items to the end of an array, and returns the new length.</li>
+            <li>pop() : The pop() method removes the last element of an array, and returns that element.</li>
+            <li>findIndex() :This method returns the index of the first element in an array that pass a test (provided as a function).</li>
+        </ol>
+
+    </h5>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+
+
+
+    <script>
+
+        var cars = ["Mahindra", "TATA","BMW","Volkswagon","Audi"];
+        var model = ["XUV500", "MK50", "i10"];
+       
+        var vehicle = cars.concat(model);
+        var d = cars.pop();
+        var c= cars.copyWithin(2, 0);
+
+        document.getElementById('p1').innerHTML=vehicle;
+        document.getElementById('p2').innerHTML=c;
+        document.getElementById('p3').innerHTML=d;
+
+        var ages = [3, 10, 18, 20];
+
+        function checkAdult(age) {
+            return age >= 18;
+        }
+
+        function myFunction() {
+            document.getElementById("p4").innerHTML = ages.findIndex(checkAdult);
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>
